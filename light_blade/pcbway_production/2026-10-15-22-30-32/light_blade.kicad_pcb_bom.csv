@@ -1,0 +1,15 @@
+﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type,KiLib_Generator
+"C1, C10, C2, C3, C4, C5, C6, C7, C8, C9",10,100nF,C_0805_2012Metric,,,,smt,SMD_2terminal_chip_molded
+C11,1,470uF 10V,CP_Elec_8x10,,,,smt,capacitor/SMD/elec_round_polarized
+"D1, D10, D10, D10, D2, D3, D4, D5, D6, D7, D8, D9",12,LED 0805 white,LED_0805_2012Metric,,,,smt,SMD_2terminal_chip_molded
+D11,1,LED Filament 3V 38mm,LED_Filament_38mm,,,Yes,smt,
+D12,1,LED Filament 3V 38mm,LED_Filament_38mm,,,Yes,smt,
+D13,1,LED Filament 3V 38mm,LED_Filament_38mm,,,Yes,smt,
+D14,1,LED Filament 3V 38mm,LED_Filament_38mm,,,Yes,smt,
+D15,1,LED Filament 3V 38mm,LED_Filament_38mm,,,Yes,smt,
+D16,1,LED Filament 3V 38mm,LED_Filament_38mm,,,Yes,smt,
+J1,1,IN,JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal,,S3B-XH-A (or XH-3AW clone),,tht,connector/JST
+J2,1,OUT,JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal,,S3B-XH-A (or XH-3AW clone),,tht,connector/JST
+"R1, R10, R2, R21, R3, R4, R5, R6, R7, R8, R9",11,33R,R_0805_2012Metric,,,,smt,SMD_2terminal_chip_molded
+"R11, R12, R13, R14, R15, R16, R17, R18, R19, R20",10,100R,R_0805_2012Metric,,,,smt,SMD_2terminal_chip_molded
+"U1, U10, U2, U3, U4, U5, U6, U7, U8, U9",10,WS2811,SOIC-8_3.9x4.9mm_P1.27mm,,,,smt,package/gullwing

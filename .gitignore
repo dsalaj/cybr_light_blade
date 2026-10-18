@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# KiCad: lock files, per-user settings, local history, caches, backups
+~*.lck
+*.kicad_prl
+.history/
+fp-info-cache
+*-backups/
+_autosave-*
