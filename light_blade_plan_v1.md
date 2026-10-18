@@ -32,7 +32,7 @@ KiCad project: `light_blade/light_blade.kicad_sch` (KiCad 10)
 | U1 | D1 (R), D2 (G), D3 (B) | 1 |
 | U2 | D4, D5, D6 | 2 |
 | U3 | D7, D8, D9 | 3 |
-| U4 | D10 (R channel only; G and B unused) | 4 |
+| U4 | D10 (R), D17 (G), D18 (B) | 4 |
 | U5 … U10 | Filaments D11 … D16, one per chip, R/G/B paralleled | 5 … 10 |
 
 In the Elite/WLED controller, each board is **10 RGB pixels**:
@@ -46,7 +46,7 @@ In the Elite/WLED controller, each board is **10 RGB pixels**:
 | Ref | Qty | Part | Value | Footprint | Assembly |
 |---|---|---|---|---|---|
 | U1–U10 | 10 | WS2811 SOP-8 | WS2811 | `Package_SO:SOIC-8_3.9x4.9mm_P1.27mm` | PCBWay |
-| D1–D10 | 10 | 0805 LED (KENTO, Everlight, … from LCSC) | LED 0805 white | `LED_SMD:LED_0805_2012Metric` | PCBWay |
+| D1–D10, D17, D18 | 12 | 0805 LED (KENTO, Everlight, … from LCSC) | LED 0805 white | `LED_SMD:LED_0805_2012Metric` | PCBWay |
 | D11–D16 | 6 | LED filament 3 V 38 mm (AliExpress) | – | `light_blade:LED_Filament_38mm` (custom) | **Hand-solder (DNP)** |
 | R1–R10 | 10 | Resistor 0805 | 33 Ω | `Resistor_SMD:R_0805_2012Metric` | PCBWay |
 | R11–R20 | 10 | Resistor 0805 | 100 Ω | `Resistor_SMD:R_0805_2012Metric` | PCBWay |
@@ -127,7 +127,7 @@ Use this to understand the generated schematic or to rebuild it from scratch.
     - On each of U5–U10, give OUTR, OUTG and OUTB the **same** label (`FIL1_K` … `FIL6_K`).
     - Filament anode to +5V, cathode to that label.
     - Set the filament symbols to *Do not populate*.
-11. **Mark unused outputs.** Put no-connect flags on U4's OUTG and OUTB.
+11. **Wire U4's outputs.** OUTR, OUTG and OUTB drive D10, D17 and D18 (labels `U4_R`, `U4_G`, `U4_B`).
 12. **Annotate and assign footprints.** Tools → Annotate Schematic, then Tools → Assign Footprints. Use the footprints from the BOM table.
 13. **Add sourcing fields.** Give each part an `LCSC` or `MPN` field with the part number for PCBWay's BOM import.
 14. **Run ERC.** Inspect → Electrical Rules Checker. Exclude the 12 intentional output-to-output errors described above.

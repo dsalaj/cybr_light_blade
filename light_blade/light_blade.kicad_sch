@@ -4864,13 +4864,47 @@
 		)
 		(uuid "dffec630-fa75-55f1-8f60-649fbaab8603")
 	)
-	(no_connect
-		(at 279.4 68.58)
-		(uuid "a779305b-4274-5cda-8c1d-5b521a52bac6")
+	(wire
+		(pts
+			(xy 279.4 68.58) (xy 281.94 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "579f4427-30d0-4d14-b544-2581a6373ad4")
 	)
-	(no_connect
-		(at 279.4 71.12)
-		(uuid "5cdffbcd-e597-58b7-91c5-129b8b71df9a")
+	(label "U4_G"
+		(at 281.94 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d5daef7-cdd1-467f-acbf-0caea40189ca")
+	)
+	(wire
+		(pts
+			(xy 279.4 71.12) (xy 281.94 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "394634ad-7546-4792-8392-9c436e7658df")
+	)
+	(label "U4_B"
+		(at 281.94 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a9f9e651-2dd9-4bf6-937f-e0199802f409")
 	)
 	(symbol
 		(lib_id "Driver_LED:WS2811")
@@ -10234,6 +10268,314 @@
 			(project "light_blade"
 				(path "/9af29102-d61b-5c6d-bbe1-9095a2a1f2f2"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 325.12 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09db9d42-47d2-4fd6-a538-4144999175e5")
+		(property "Reference" "D17"
+			(at 325.12 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED 0805 white"
+			(at 325.12 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 325.12 182.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 325.12 182.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 325.12 182.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3acaf820-2b6f-4f74-b849-40f9aa25e14c")
+		)
+		(pin "2"
+			(uuid "b3c9c7c5-882c-426e-bb12-098473b7df4f")
+		)
+		(instances
+			(project "light_blade"
+				(path "/9af29102-d61b-5c6d-bbe1-9095a2a1f2f2"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 321.31 182.88) (xy 318.77 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f425fa2-83cc-4292-9eb1-2bd27c07793e")
+	)
+	(label "U4_G"
+		(at 318.77 182.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d0add1ff-5962-4458-beed-644bf8a8c38d")
+	)
+	(wire
+		(pts
+			(xy 328.93 182.88) (xy 331.47 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42910a9d-0980-44c1-aea5-14f4f84e0c39")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 331.47 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d42dca84-7323-490a-b15e-151409f50d51")
+		(property "Reference" "#PWR053"
+			(at 331.47 186.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 331.47 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 331.47 182.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 331.47 182.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7753d336-2dcd-4c4a-acca-53347ce7f231")
+		)
+		(instances
+			(project "light_blade"
+				(path "/9af29102-d61b-5c6d-bbe1-9095a2a1f2f2"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 353.06 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d50f9e9-3996-4c5c-9976-8ffdab36bca2")
+		(property "Reference" "D18"
+			(at 353.06 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED 0805 white"
+			(at 353.06 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 353.06 182.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 353.06 182.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 353.06 182.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92f54bcf-1a98-4fdf-b44e-84d79d738d4b")
+		)
+		(pin "2"
+			(uuid "91c8a5ae-4bdf-49de-96fc-eea11d6ee432")
+		)
+		(instances
+			(project "light_blade"
+				(path "/9af29102-d61b-5c6d-bbe1-9095a2a1f2f2"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 349.25 182.88) (xy 346.71 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "945bfcbf-2034-4853-8dae-ba0c17d64f9b")
+	)
+	(label "U4_B"
+		(at 346.71 182.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d80d1e7c-1988-44de-9ac7-abdf64494897")
+	)
+	(wire
+		(pts
+			(xy 356.87 182.88) (xy 359.41 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebb7c25c-09fd-4c6c-9c94-eb88c924f1f5")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 359.41 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "61bf5e37-0921-4f40-bfd7-16e8e12b94b5")
+		(property "Reference" "#PWR054"
+			(at 359.41 186.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 359.41 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 359.41 182.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 182.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b18d75bd-af16-4ba3-b62a-04f005ca83fd")
+		)
+		(instances
+			(project "light_blade"
+				(path "/9af29102-d61b-5c6d-bbe1-9095a2a1f2f2"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
